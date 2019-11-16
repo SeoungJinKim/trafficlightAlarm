@@ -8,45 +8,28 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         tools:context="asan.hospital.asanbeacon.MainActivity">
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolBar"
                 app:contentInsetStart="0dp"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/mainColor"
                 >
-                <ImageView
-                    android:contentDescription="@string/app_name"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:scaleType="centerInside"
-                    app:srcCompat="@drawable/ic_menu_white_24dp"/>
 
-            </android.support.v7.widget.Toolbar>
-        </android.support.design.widget.AppBarLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
         <FrameLayout
             android:layout_marginTop="?attr/actionBarSize"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/beaconListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </FrameLayout>
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/scanBleFAB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="@dimen/fab_margin"
-            android:layout_marginBottom="@dimen/fab_margin"
-            app:backgroundTint="@color/mainColor"
-            app:srcCompat="@drawable/ic_visibility_white_24dp"
-            app:fabSize="normal"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
